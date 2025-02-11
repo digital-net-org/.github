@@ -4,14 +4,11 @@
 
 ## 📌 Applications
 
-- **Website Page Management** → `digital-puck` *(React App)*  
-  Allows users to create and edit website pages through an intuitive interface.
+- **Website Page Management** → `digital-pages` *(React App)*  
+  Allows users to create and edit website pages and write and manage blog articles through an intuitive interface.
   
 - **Event Management** → `digital-events` *(React App)*  
   Enables the creation and management of events that end users can register for.
-
-- **Article Management** → `digital-blog` *(React App)*  
-  Allows users to write and manage blog articles.
 
 - **Website** → `digital-client` *(Next.js App)*  
   The public-facing website for end users.
@@ -68,17 +65,13 @@ flowchart TB
     end
 
     subgraph Front ["Node (Front)"]
-        DigitalPuck["`
-            digital-puck
+        DigitalPages["`
+            digital-pages
             *React App (Pages)*
         `"]
         DigitalEvents["`
             digital-events
             *React App (Events)*
-        `"]
-        DigitalBlog["`
-            digital-blog
-            *React App (Blog)*
         `"]
         DigitalClient["`
             digital-client
@@ -88,9 +81,8 @@ flowchart TB
             digital-lib.js
             *submodule*
         `"}}
-        DigitalLibJS --> DigitalPuck
+        DigitalLibJS --> DigitalPages
         DigitalLibJS --> DigitalEvents
-        DigitalLibJS --> DigitalBlog
         DigitalLibJS --> DigitalClient
     end
 
